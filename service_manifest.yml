@@ -1,0 +1,22 @@
+name: StegFinder
+version: $SERVICE_TAG
+description: Automatically analyze image, audio and video files generating values representing the probability to contain steganography
+
+accepts: image/.*|audiovisual/.*
+rejects: empty|metadata/.*
+
+stage: CORE
+category: Static Analysis
+
+file_required: true
+timeout: 60
+disable_cache: false
+
+enabled: true
+is_external: false
+licence_count: 0
+
+docker_config:
+  image: x1mus/assemblyline-service-steg-finder:$SERVICE_TAG
+  cpu_cores: 1
+  ram_mb: 256
