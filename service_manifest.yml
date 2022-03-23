@@ -1,5 +1,5 @@
 name: StegFinder
-version: $SERVICE_TAG
+version: 4.2.0.stable1
 description: Automatically analyze image, audio and video files generating values representing the probability to contain steganography
 
 accepts: image/.*|audiovisual/.*
@@ -17,6 +17,6 @@ is_external: false
 licence_count: 0
 
 docker_config:
-  image: ghcr.io/nvisosecurity/assemblyline-service-steg-finder:$SERVICE_TAG
+  image: ghcr.io/nvisosecurity/assemblyline-service-steg-finder:main
   cpu_cores: 1
   ram_mb: 256
